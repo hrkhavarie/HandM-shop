@@ -1,6 +1,4 @@
 
-import Image from 'react-image-webp';
-import { isWebpSupported } from 'react-image-webp/dist/utils';
 import ProductImage from './ProductImage';
 import { Link, redirect } from 'react-router-dom';
 const ProductCard = ({product}) => {
