@@ -1,5 +1,5 @@
 import ProductCard from './ProductCard'
-import {  fetchProducts, getMenu } from "../../utils/services";
+import {  fetchProducts } from "../../utils/services";
 import { useLoaderData } from 'react-router-dom';
 import MenuItem from './MenuItem';
 import Search from './search';
@@ -54,11 +54,5 @@ import ProductFilters from './ProductFilters';
   )
 }
 
-
-
-// export async function loader() {
-//   const menu = await getMenu();
-//   return menu;
-// }
 
 export default ProductList
