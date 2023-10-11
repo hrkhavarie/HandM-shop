@@ -43,7 +43,7 @@ export default function ProductFilters({fliterValueSelected , onFilteredPriceSel
             <label >Price Below: </label>
             <select className="form-select" id="category" onChange={onFilterPriceChanged}>
               <option defaultValue="30">30</option>
-              <option defaultValue="60">60</option>
+              <option defaultValue="60" selected>60</option>
               <option defaultValue="100">100</option>
             </select>
           </div>

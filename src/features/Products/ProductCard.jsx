@@ -6,7 +6,7 @@ const ProductCard = ({product}) => {
 
 
   // console.log('price',price.formattedValue);
-  // console.log(images);
+  console.log(variantSizes);
 
   const handleClick = ()=>{
     redirect(`/shop/${id}`)
@@ -44,11 +44,13 @@ const ProductCard = ({product}) => {
             <select className="form-select " aria-label="Default select example" >
           {
             variantSizes.map((size)=>
-            {
+            (
+
               
-              <option value={size.filterCode} key={size.id}>{size.filterCode}</option>
+              <option value={size.filterCode} >{size.filterCode}</option>
+              )
             
-            }
+            
               
               
               

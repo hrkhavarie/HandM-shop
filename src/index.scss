@@ -63,13 +63,13 @@ a:hover {
 .hm-header{
   max-height: 600px !important;
   .carousel {
-    height: 500px;
+    //height: 600px;
     // overflow: hidden;
   }
 
   .carousel-item{
     img{
-       max-height: 600px !important;
+       max-height: 800px !important;
     }
   }
 
@@ -130,14 +130,14 @@ button:focus-visible {
 .loaderContainer{
   position: absolute;
   width: 100%;
-  /* z-index: 100; */
+   z-index: 100; 
   inset: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-   background-color: rgb(226 232 240 / 0.2);
-   --tw-backdrop-blur: blur(4px);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+   background-color: rgba(32, 33, 33, 0.5);
+  //  --tw-backdrop-blur: blur(4px);
+  //   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 .loader {
   
@@ -147,7 +147,10 @@ button:focus-visible {
   background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
   background-size: 20% 50%;
   animation: loading 1s infinite linear;
-  background: #fad521;
+  //background: #fad521;
+  img{
+    width: 45px;
+  }
 }
 
 @keyframes loading {

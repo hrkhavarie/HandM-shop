@@ -8,7 +8,7 @@ const Product = () => {
   const allProducts = useLoaderData();
   const {results} = allProducts;
   const [filteredText, setfilteredText] = useState('Men')
-  const [fiteredPrice, setfiteredPrice] = useState(30)
+  const [fiteredPrice, setfiteredPrice] = useState(60)
   const [newProductList , updateProductList]= useState(results)
 
 
