@@ -18,7 +18,7 @@ const ProductCard = ({product}) => {
     <div className="card mb-4" >
       
 
-     <ProductImage key={images.id} images={images}/>
+     <ProductImage  images={images}/>
       
       <div className="card-body">
        <h5 className="card-title">{name}  </h5>
@@ -28,31 +28,36 @@ const ProductCard = ({product}) => {
         {/* <p className="card-text">{categoryName}</p> */}
         <p className="card-text fw-bold">{price.formattedValue}</p> 
        </div>
-       <div className='mb-3 mt-2'>
+       <div className='mb-3 mt-2' >
                 {
                   rgbColors?.map(color=>(
-                    <span class="badge rounded-pill m-1  d-inline " style={{backgroundColor: `${color}`}}>C</span>
-                  ))
-                }
+                  
+                    <span className="badge rounded-pill m-1  d-inline " key={color.id} style={{backgroundColor: `${color}`}}>C</span>
+                    
+                    ))
+                  }
+                  </div>
 
-              </div>
         
 <div className="d-flex justify-content-between align-items-center mb-3">
 
           <span>Size:</span>
-          <select class="form-select " aria-label="Default select example">
  
+            <select className="form-select " aria-label="Default select example" >
           {
             variantSizes.map((size)=>
-            (
+            {
               
-              <option value={size.filterCode}>{size.filterCode}</option>
+              <option value={size.filterCode} key={size.id}>{size.filterCode}</option>
+            
+            }
+              
+              
               
               )
-              )
-              
             }
               </select>
+              
 
             </div>
               
@@ -61,7 +66,7 @@ const ProductCard = ({product}) => {
           
           <div className="d-grid gap-2 d-md-flex justify-content-md-between">
   <button className="btn btn-info" type="button">Compare</button>
-  <button className="btn btn-primary" type="button"><i class="bi bi-basket"></i>Add to Basket</button>
+  <button className="btn btn-primary" type="button"><i className="bi bi-basket"></i>Add to Basket</button>
 </div>
        
       </div>

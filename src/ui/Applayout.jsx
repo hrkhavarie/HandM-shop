@@ -2,6 +2,7 @@ import { Outlet, useNavigation } from "react-router-dom"
 import Navbar from "./Navbar"
 import Loader from "./Loader";
 
+
 const Applayout = () => {
     const navigation = useNavigation();
     const isLoading = navigation.state === 'loading'
@@ -15,6 +16,10 @@ const Applayout = () => {
         }
         <div className="row">
           <Navbar  />
+       
+        
+        
+
         </div>
         
         <main>

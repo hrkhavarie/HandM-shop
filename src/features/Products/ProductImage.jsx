@@ -5,11 +5,11 @@ export default function ProductImage({images}) {
     <div className='imageholder'>
          {
         images.map(img=>(
-          <span key={img.id}>
+          <div key={img.url}>
             
               <img className='img-fluid' src={img.baseUrl} alt='image' />
               
-          </span>
+          </div>
         ))
       }
     </div>

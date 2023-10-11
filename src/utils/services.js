@@ -1,3 +1,8 @@
+// const RapidAPIKey = import.meta.env.VITE_RAPIDAPIKEY ;
+// const RapidAPIHost = import.meta.env.VITE_RAPIDAPIHOST ;
+
+// console.log(RapidAPIKey);
+
 
 
 // const url = 'https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US';
@@ -10,8 +15,11 @@ export async function fetchProducts(){
     const  headers = {
     //   'X-RapidAPI-Key': '922399268fmshe760f8b6e4743aep175f33jsn0a52bc2e2b54',
 		// 'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
-    'X-RapidAPI-Key': '442f6b0498mshc4a65af69940694p142531jsn0182b5f1b8a2',
-		'X-RapidAPI-Host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com' , 
+    // 'X-RapidAPI-Key': '442f6b0498mshc4a65af69940694p142531jsn0182b5f1b8a2',
+		// 'X-RapidAPI-Host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com' , 
+    'X-RapidAPI-Key':  import.meta.env.VITE_RAPIDAPIKEY ,
+    'X-RapidAPI-Host': import.meta.env.VITE_RAPIDAPIHOST,
+
     // "Content-Type": "application/json"
     }
   // };

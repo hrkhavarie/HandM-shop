@@ -23,6 +23,7 @@ export default function ProductFilters({fliterValueSelected , onFilteredPriceSel
       <input 
         className="form-control me-2" 
         type="search"
+        value=''
         placeholder="Search" 
         aria-label="Search"
         onChange={(e)=>setQuery(e.target.value)}
@@ -50,9 +51,9 @@ export default function ProductFilters({fliterValueSelected , onFilteredPriceSel
           <div className="mb-3">
             <label >By Price</label>
             <select className="form-select" id="category">
-              <option selected>latest</option>
-              <option>Acending</option>
-              <option>Decending</option>
+              <option value='' selected>latest</option>
+              <option value='Acending'>Acending</option>
+              <option value='Decending'>Decending</option>
             </select>
           </div>
           {/* <div className="mb-3">

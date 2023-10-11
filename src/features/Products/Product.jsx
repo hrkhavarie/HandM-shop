@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import ProductList from './ProductList'
 import { fetchProducts } from '../../utils/services';
 import { useLoaderData } from 'react-router-dom';
@@ -19,12 +19,12 @@ const filteredProductPrice = newProductList.filter(product=>{
     return product
 })
 
-console.log('productsss',filteredProductPrice);
-const filteredProductsList = newProductList.filter((product)=>{
-    if(filteredText === product.categoryName)  
-    return product    
+// console.log('productsss',filteredProductPrice);
+// const filteredProductsList = newProductList.filter((product)=>{
+//     if(filteredText === product.categoryName)  
+//     return product    
 
-})
+// })
 console.log('NewProductlist',newProductList);
 
 
@@ -41,7 +41,7 @@ console.log('NewProductlist',newProductList);
 
       function createProductList(product){
         product.id = newProductList.length +1;
-        updateProductList([  ...newProductList]);
+        updateProductList([product ,  ...newProductList]);
       }
   return (
     <>
@@ -51,7 +51,7 @@ console.log('NewProductlist',newProductList);
         </div>
     <div className="row">
       <ProductFilters fliterValueSelected={onfilteredValueSelected} onFilteredPriceSelected={onFilteredPriceSelected}  />
-      <ProductList ProductList={newProductList}/>
+      <ProductList ProductList={filteredProductPrice}/>
 
         </div>
         </div>

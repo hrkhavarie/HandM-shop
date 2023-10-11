@@ -27,7 +27,7 @@ import ProductFilters from './ProductFilters';
   // const menu = useLoaderData();
 
   // const {products} = allProducts;
-  // console.log('productslist', results);
+  console.log('productslist', results);
 
   
 
@@ -43,7 +43,7 @@ import ProductFilters from './ProductFilters';
               // .filter((products)=>products.name.toLowerCase().includes(query))
             .map(product=>
 
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.pk}  product={product} />
             )
           }
 
