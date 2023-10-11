@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 // import {   loadEnv } from 'vite'
-import dotenv from 'dot-env'
 // import eslint from 'vite-plugin-eslint'
 // import eslint from 'vite-plugin-eslint'
 // dotenv.config();

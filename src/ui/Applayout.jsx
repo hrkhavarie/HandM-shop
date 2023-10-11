@@ -6,7 +6,7 @@ import Loader from "./Loader";
 const Applayout = () => {
     const navigation = useNavigation();
     const isLoading = navigation.state === 'loading'
-    // console.log('state' ,navigation.state);
+    console.log('state' ,navigation.state);
   return (
    <>
   
@@ -16,10 +16,6 @@ const Applayout = () => {
         }
         <div className="row">
           <Navbar  />
-       
-        
-        
-
         </div>
         
         <main>
